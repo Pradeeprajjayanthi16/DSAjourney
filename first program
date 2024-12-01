@@ -1,0 +1,18 @@
+// Online C++ compiler to run C++ program online
+// my first program of the DSA journey 
+#include <iostream>
+using namespace std ;
+// voting eligibility 
+int main() {
+    
+    int age ;
+    cout << "enter the age : ";
+    cin >> age ;
+    if (age>=18){
+        cout << " the person is eligible for voting ";
+    }
+    else {
+        cout << " the person is not eligible for voting ";
+    }
+    return 0;
+}
