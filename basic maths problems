@@ -114,4 +114,43 @@ int main() {
 
 same as odd , but instead of if (ld%2!=0) make it as if(ld%2==0)
 
-//
+// palindrome number 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+     int n , ld ;
+     cin >> n ;
+     int x = n;
+     int sum = 0 ;
+     while (n>0){
+         ld = n % 10 ;
+         sum = sum * 10 + ld ;
+         n = n / 10 ;
+     }
+     cout << sum << endl ;
+     if (sum==x){
+         cout << "its a palindrome number ";
+     }
+     else {
+         cout << " its not a palindrome number ";
+     }
+}
+
+// reverse a number 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+     int n , ld ;
+     cin >> n ;
+     int sum = 0 ;
+     while (n>0){
+         ld = n % 10 ;
+         sum = sum * 10 + ld ;
+         n = n / 10 ;
+     }
+     cout << sum << endl ;
+}
