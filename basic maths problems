@@ -1,0 +1,117 @@
+// last digit problem 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    long long n ;
+    int lastdigit ;
+    cin >> n ;
+    lastdigit = n%10;
+    cout << lastdigit ;
+    
+    return 0;
+}
+
+// odd even problem 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n ;
+    cin >> n;
+    if(n%2==0){
+        cout << "it is even number ";
+        
+    }
+    else{
+        cout << "it is odd number ";    }
+    
+    return 0;
+}
+
+//  printing last digit untill traversing all numbers 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    long long n ;
+    int lastdigit ;
+    cin >> n ;
+    while(n>0){
+        lastdigit = n%10;
+        cout << lastdigit ;
+        n = n/10 ;
+        cout << endl ;
+    }
+    
+    return 0;
+}
+
+// first digit of a guven number 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    long long n ;
+    int lastdigit ;
+    cin >> n ;
+    while(n>0){
+        lastdigit = n%10;
+        n = n/10 ;
+    }
+    if ( n == 0){
+        cout << lastdigit ;
+    }
+    
+    return 0;
+}
+
+// number of digits 
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int n ;
+    cin >> n ;
+    int count = 0 ;
+    while (n > 0){
+        count+=1;
+        n = n/10 ;
+    }
+    cout << count ;
+    return 0;
+}
+
+// number of odd digits 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int n ;
+    cin >> n ;
+    int count = 0 ;
+    while (n > 0){
+        int ld = n%10;
+        if(ld%2!=0){
+            count+=1;
+        }
+        n = n/10 ;
+    }
+    cout << count ;
+    return 0;
+}
+
+// number of even digits 
+
+same as odd , but instead of if (ld%2!=0) make it as if(ld%2==0)
+
+//
