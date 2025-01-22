@@ -1,0 +1,20 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std ;
+
+void function(int n){
+   if(n==0){
+       return;
+   }
+   else{
+    cout << n << endl;
+    function(n-1);
+   }
+    
+}
+int main() {
+    int n ;
+    cin >> n;
+    function(n);
+    return 0;
+}
