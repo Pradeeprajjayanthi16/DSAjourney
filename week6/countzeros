@@ -1,0 +1,29 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std ;
+
+int countzeros(int n){
+    
+    if(n%10==n){
+        if(n%10==0){
+            return 1 ;
+        }
+        else {
+            return 0 ;
+        }
+    }
+    
+    if(n%10==0){
+        return 1+countzeros(n/10) ;
+    }
+    else {
+        return countzeros(n/10);
+    }
+    
+}
+
+int main() {
+    cout << countzeros(2030102030);
+
+    return 0;
+}
