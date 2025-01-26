@@ -16,3 +16,52 @@ int main() {
     }
     return 0;
 }
+
+//(default input)
+// greater number in three numbers 
+#include <iostream>
+using namespace std;
+
+int main() {
+     int a = 15 ;
+     int b = 50 ;
+     int c = 32 ;
+     if (a>b && a>c){
+         cout << " a is greater number ";
+     }
+     else if (b>a && b>c){
+         cout << " b is greater number ";
+     }
+     else {
+         cout << " c is greater number ";
+     }
+    return 0;
+}
+
+//(user input)
+
+// Online C++ compiler to run C++ program online
+// greater number in three numbers 
+#include <iostream>
+using namespace std;
+
+int main() {
+     int a,b,c;
+     cout << " enter value for a ";
+     cin >> a;
+     cout << " enter value for b ";
+     cin >> b;
+     cout << " enter value for c ";
+     cin >> c;
+     
+     if (a>b && a>c){
+         cout << " a is greater number ";
+     }
+     else if (b>a && b>c){
+         cout << " b is greater number ";
+     }
+     else {
+         cout << " c is greater number ";
+     }
+    return 0;
+}
