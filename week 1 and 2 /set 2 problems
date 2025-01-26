@@ -1,0 +1,47 @@
+// problem 1
+
+#include <iostream>
+using namespace std ;
+
+int main() {
+    int a , b , c;
+    cin >> a >> b ;
+    for (c=0;c<b;c++){
+        cout << a << endl;
+    }
+
+    return 0;
+}
+
+// problem 2 
+
+#include <iostream>
+using namespace std ;
+
+int main() {
+    int x;
+    cin >> x;
+    for(int a;a<=1000;a+=x)
+    cout<< a << endl;
+    return 0;
+}
+
+// problem 3 
+
+#include <iostream>
+using namespace std ;
+void Namejoiner(string a , string b , int c){
+    string result = a+b;
+    for(int y;y<c;y++){
+        cout << result<< endl;
+    }
+}
+int main() {
+    string firstName,lastName ;
+    int x;
+    cin >> firstName ;
+    cin >> lastName ; 
+    cin >> x ;
+    Namejoiner(firstName,lastName,x);
+    return 0;
+}
