@@ -1,0 +1,27 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std ;
+
+int recarray(int arr[],int n,int i,int key){
+    if(i>=n){
+        return -1;
+    }
+    if(arr[i]==key){
+    return i;
+    }
+    else{
+    i = i+1 ;
+    return recarray(arr,n,i,key);
+    }
+}
+
+int main() {
+    
+    int arr[] = {25,27,36,64,20};
+    int i=0;
+    int key = 203 ;
+    cout << recarray(arr,5,i,key);
+    
+
+    return 0;
+}
